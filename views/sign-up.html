@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="../public/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../public/stylesheets/bootstrap-grid.css">
+    <link rel="stylesheet" href="../public/stylesheets/fontawsome.all.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/sign-up.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Dancing+Script:wght@700&display=swap&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <div class="container text-center">
+                <header>
+                    <h2>Sign Up</h2>
+                    <small class="form-text text-muted">Please fill in this form to creat an account</small>
+                </header>
+                <form action="/home" method="POST">
+                    <div class="form-group row">
+                        <div class="col-lg-6">
+                            <input type="text" id="fname" placeholder="First Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" id="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <span class="fas fa-check" data-fa-transform="grow-5 down-15 left-4"></span>
+                        <input type="text" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-6">
+                            <span class="fas fa-user-lock" data-fa-transform="grow-5 down-15 left-4"></span>
+                            <input type="password" id="inputPassword" placeholder="Password">
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="fas fa-user-lock" data-fa-transform="grow-5 down-15 left-4"></span>
+                            <input type="password" id="confPassword" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                        <div class="form-group row">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="cnfrmplciaccpt">
+                            <label class="form-check-label" for="cnfrmplciaccpt">I accept the <a>Terms of Use</a> & <a>Policy</a></label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger btn-lg">Sign Up</button>
+                    
+                </form>
+            </div>
+
+
+
+        <script src="../public/js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="../public/js/fontawesome/all.min.js"></script>
+        <script src="../public/js/fontawesome/brands.min.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
+        <script src="../public/js/plugins.js"></script>
+    </body>
+</html>
+

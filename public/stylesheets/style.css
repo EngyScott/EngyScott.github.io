@@ -1,0 +1,686 @@
+
+/***************************** MY STYLES ********************************/
+h1{
+    text-transform: capitalize;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color:rgb(0, 0, 51);
+}
+h5{
+    font-style: italic;
+}
+span.special{
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+span.red{
+    color: rgb(228, 27, 23);
+}
+
+
+/*************************** START OVERRIDING FONTAWESOME ***********************/
+.fa-fw.svg-inline--fa {
+    width: 1em;
+}
+
+.fa-facebook {
+    color: rgb(59, 91, 152);
+  }
+.fa-twitter{
+    color: RGB(29,161,242)
+}
+.fa-youtube{
+    color: rgb(255,0,0)
+}
+.fa-google-plus{
+    color: rgb(219,74,57)
+}
+.fa-sort-up{
+    font-size: 1.5rem;
+}
+/*************************** START OVERRIDING BOOTSTRAP ***********************/
+
+nav.sticky-top{
+    padding: 0;
+    padding-right: 2rem;
+    padding-left: 1rem
+}
+        /*   active link  */
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    background-color: #e41b17;
+}
+        /* NAVBAR LINK */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(199, 197, 197);
+    padding: 0 1rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+        /* NAVBAR LINK HOVER */
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(255, 255, 255);
+    background-color: #e41b17;
+}
+        /* BRAND NAME */
+.navbar-dark .navbar-brand {
+    padding: 0;
+    margin-right: 1rem;
+    display: block;
+}
+#logo{
+    width: 7rem;
+}
+        /* DROPDOWN MENU */
+.dropdown-menu {
+    background-color: #343a40;
+    border-top: 3px solid #e41b17;
+}
+.dropdown-item {
+    color: rgb(199, 197, 197);
+}
+a.dropdown-item:hover, a.dropdown-item:focus{
+    background-color: #e41b17;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 2rem;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+.dropdown-divider {
+    border-top: 1px solid #e41b17;
+}
+        /* NAVBAR COLLAPSE BUTTON */
+.navbar-toggler {
+    padding: .05rem 0.3rem;
+}
+.navbar-toggler-icon{
+    height: 1.25em;
+}
+.navbar-dark .navbar-toggler {
+    border-color: rgb(228, 27, 23);
+}
+
+/******************** MAIN CROUSEL *********************/
+
+#main-Slide{
+    max-height: 80vh;
+}
+
+.carousel-inner>div{
+    height: 80vh;
+    justify-content: center;
+    align-content: center;
+}
+img.w-100{
+    height: 90%;
+    max-width: 100%;
+    max-height: 500px;
+    align-items: stretch;
+}
+.carousel-indicators li{
+    width: 15px;
+    background-color: #343a40;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #e41b17;
+}
+
+/*********** SECTION ABOUT **********************/
+section.about{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.about>div>h1{
+    font-weight: 700;
+}
+
+
+/******************* SECTION FEATURES ***************/
+.features{
+    background-color: #eee;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.features h2{
+    margin-bottom: 2rem;
+}
+div.feat{
+    margin-bottom: 2em;
+}
+/* .features .feat>h5{
+    font-style: italic;
+} */
+.features .feat p{
+    line-height: 1.5em;
+}
+.features .feat>span>svg.bi{
+    font-size: 2rem;
+    color: rgb(228, 27, 23);
+    margin: .5rem;
+}
+
+/****************** SECTION TESTIMONIALS **************/
+.testimonials{
+    padding: 2em;
+}
+#testimonialsCarousel{
+    max-width: 90vw;
+}
+section.testimonials>h2{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+#testimonialsCarousel{
+    background-color: #343a40;
+    color: rgb(199, 197, 197);
+    border-radius: 5px;
+    padding: 1rem;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-inner>div{
+    height: 100%;
+}
+.blockquote {
+    font-size: 80%;
+}
+.blockquote-footer {
+    font-size: .8rem;
+}
+.media{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.media-body>h5{
+    font-style: italic;
+}
+
+ /*********** PRICES SECTION *****************/
+ section.price-table{
+    margin: 0;
+    position: relative;
+ }
+
+ section.price-table .bg{
+    background: url("../images/plan.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+}
+section.price-table .container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.price-table .price-box{
+    background-color: rgb(230, 230, 0);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+}
+.price-box:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+.price-table h2{
+margin:  2rem;
+}
+.price-table h5{
+background-color: rgb(230, 230, 0);
+border-radius: 15px;
+font-weight: 700;
+font-size: 1.25rem;
+color: rgb(52, 58, 64);
+}
+.price-table a{
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+.price-table .price-box p{
+font-size: 1.5rem;
+font-weight: 500;
+text-shadow: 2px 1px rgb(255, 255, 77);
+}
+.price-table ul.list-unstyled{
+    margin-bottom: .5rem;
+}
+
+/************** SECTION TEAM ***************/
+section.our-team{
+    background: url("../images/team.jpg") no-repeat center center fixed;
+    width: 100%;
+    background-size: cover;
+    position: relative; 
+}
+.our-team .team{
+    background-color: rgba(230, 255, 255,0.7);
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.our-team .team .container{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+.our-team .team h2{
+    margin-bottom: 1rem;
+}
+.our-team .team .person{
+    margin-bottom: 1rem;
+}
+.team img{
+    width: 7rem;
+}
+.team h5{
+    color: rgb(0, 0, 51);
+}
+.team p{
+    line-height: 1.2;
+    font-style: italic;
+}
+.our-team .team .person a span.fab:hover, .our-team .team .person a span.fab:focus{
+    transform: scale(1.1);
+}
+
+/************** SECTION SUBSCRIBE ***************/
+.subscribe{
+    background-color: #eee;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* margin-bottom: 5rem; */
+}
+.subscribe h1{
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.subscribe .form-control{
+    border-radius: 0;
+    width: auto;
+    min-width: 300px;
+}
+.subscribe .btn-danger{
+    border-radius: 0;
+}
+.subscribe .form-inline{
+    justify-content:center;
+}
+
+/************** SECTION STATICS ***************/
+
+section.statics {
+    background: url("../images/static.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+section.statics .data{
+    background-color: rgba(52, 58, 64,0.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(191, 191, 191);
+}
+.statics .col-lg-3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.statics h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(255, 217, 255);
+}
+.statics .row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.statics p{
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.statics .stats{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.statics .stats:hover{
+    color: rgb(255, 217, 255);
+}
+
+/************** SECTION SKILLS ***************/
+section.skills{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+section.skills h2{
+    margin-bottom: 2rem;
+}
+section.skills .progress{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+section.skills .progress .progress-bar{
+    text-align: left;
+    text-indent: 1rem;
+}
+
+/************** SECTION CONTACT US ***************/
+
+section.contact-us{
+    background: url("../images/contact.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.contact-us .info{
+    background-color: rgba(9, 9, 9, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #ddd;
+}
+.contact-us h2{
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+textarea.form-control {
+    height: 9rem;
+}
+.contact-us button{
+    background-color: rgb(228, 27, 23);
+    border-color: rgb(228, 27, 23);
+    transition: all 0.5 ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5 ease-in-out;
+    -o-transition: all 0.5 ease-in-out;
+}
+.contact-us button:hover{
+    background-color: rgb(209, 24, 21);
+    border-color: rgb(209, 24, 21);
+}
+
+/************** OUR CLIENTS SECTION ***************/
+/* .our-clients img{
+    width: 100%;
+    height: 28px;
+}
+
+.our-clients .list-inline-item{
+    align-items: center;
+} */
+
+/************** FOOTER SECTION ***************/
+section.footer{
+    background-color: #333;
+    color: #aaa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer h3{
+    color: #0895d1;
+    letter-spacing: 1px;
+    margin: 1rem 0 2rem;
+}
+.footer .f-ul{
+    overflow: hidden;
+}
+.footer .f-ul li{
+    width: 33.3333%;
+    float: left;
+    padding: .5rem 0;
+}
+.f-ul-2 li img.f-img{
+    width: 2rem;
+}
+
+.mr-3{
+    width: 3rem;
+}
+.footer .img-thumbnail{
+    width: 7rem;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid #666;
+}
+
+
+/************** MEDIA QUERY *****************/
+
+@media only screen and (max-width: 992px) {
+    img.w-100{
+        height: 60vh;
+        max-height: 450px;
+    }
+    .carousel-indicators li{
+        width: 13px;
+    }
+    #main-Slide{
+        max-height: 60vh;
+    }
+    #logo{
+        width: 5rem;
+    }
+    h2{
+        font-size: 3.5rem !important;
+    }
+    .features h2{
+        margin-bottom: 1.25rem;
+    }
+    section.testimonials>h2{
+        line-height: 1;
+    }
+    .show-lg{
+        display:none;
+    }
+    .price-table h5{
+        padding: 0.5rem;
+     }
+     .price-box:hover{
+        transform: none;
+    }
+
+    .statics p{
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    img.w-100{
+        height: 50vh;
+        max-height: 300px;
+    }
+    .carousel-indicators li{
+        width: 11px;
+    }
+    #main-Slide{
+        max-height: 50vh;
+    }
+    #logo{
+        width: 4.5rem;
+    }
+    .navbar-toggler-icon{
+        width: 1.25em;
+        height: 1em;
+    }
+    .navbar-toggler {
+        font-size: 1.25rem;
+        line-height: 0.8;
+    }
+    section.about>div>h1{
+        font-size: 2rem;
+    }
+    .features h2{
+        margin-bottom: 1rem;
+    }
+    
+    section.testimonials>h2{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .media-body>h5{
+        font-size: 1rem;
+    }
+    .blockquote {
+        font-size: 75%;
+    }
+    .blockquote p{
+        margin-bottom: 0.5rem;
+    }
+
+    .price-table h5{
+        font-size: 1.25rem;
+    }
+    .price-table .price-box p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem !important;
+    }
+    section.price-table .price-box {
+        width: 60%;
+        left: 20%;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 1rem 0;
+        position: relative;
+    }
+    section.our-team .person{
+        margin: 0.5rem;
+    }
+              
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link .dropdown-menu .dropdown-item{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .navbar-dark .navbar-nav .nav-link .dropdown-menu .dropdown-item{
+        font-weight: 300;
+    }
+
+    img.w-100{
+        height: 30vh;
+    }
+    .carousel-indicators li{
+        display: none;
+    }
+    ol, ul, dl {
+    margin-top: 0.5rem;
+    }
+   a.carousel-control-prev, a.carousel-control-next{
+       display: none;
+   }
+   #main-Slide{
+    max-height: 30vh;
+    }
+    #logo{
+        width: 4rem;
+    }
+    /**about section**/
+    section.about{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    section.about>div>h1{
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+
+    /**features section**/
+    .features{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .features .feat p{
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+    .features .feat>span>svg.bi{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 2.5rem !important;
+    }
+    .features .feat>h5{
+        font-size: 1.1rem;
+    }
+    .blockquote{
+        line-height: normal;
+    }
+    
+    #testimonialsCarousel{
+        padding: .5rem 1rem .5rem .5rem;
+    }
+    section.testimonials>h2{
+        margin-bottom: 1.25rem;
+    }
+    section.price-table{
+        padding: 1rem 0;
+    }
+    section.our-team .person{
+        margin: 1rem;
+    }
+    .subscribe .form-control{
+        min-width: 250px;
+    }
+    .subscribe h1{
+        letter-spacing: normal;
+        font-size: 1.5rem;
+    }
+    .statics p {
+        font-size: 1.25rem;
+    }
+    section.statics .data{
+        color: rgb(255,217,255)
+    }
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
